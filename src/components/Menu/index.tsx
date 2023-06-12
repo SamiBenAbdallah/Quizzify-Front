@@ -4,17 +4,17 @@ import logo from '../../assets/logo.png';
 
 function Menu() {
   return (
-    <nav className="navbar">
-      <div className="navbar__logo">
-        <img src={logo} alt="Logo quizzify" className="navbar__logo-image" />
-        <h1 className="navbar__logo-title">Quizzify</h1>
+    <header className="header">
+      <div className="header__logo">
+        <img src={logo} alt="Logo quizzify" className="header__logo-image" />
+        <h1 className="header__logo-title">Quizzify</h1>
       </div>
-      <div className="navbar__links">
-        <NavLink to="/" className="menu__link">Accueil</NavLink>
-        <NavLink to="/about" className="menu__link">Quiz</NavLink>
-        <NavLink to="/contact" className="menu__link">Profile</NavLink>
-      </div>
-    </nav>
+      <nav className="menu">
+        <NavLink to="/" className="menu-link">Accueil</NavLink>
+        <NavLink to="/quiz" className="menu-link">Quiz</NavLink>
+        <NavLink to="/profile" className="menu-link">Profile</NavLink>
+      </nav>
+    </header>
   );
 }
 

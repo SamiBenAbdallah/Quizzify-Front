@@ -1,0 +1,19 @@
+@use '../../styles/vars';
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+  }
+
+  &__logo-image {
+    width: 20%;
+  }
+
+  &__logo-title {
+    font-family: vars.$second-font;
+  }
+}
